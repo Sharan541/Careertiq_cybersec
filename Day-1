@@ -1,0 +1,87 @@
+-------------------------------------------------------------------
+DAY 1: Vignesh sir,
+
+technical terms:
+	unauthorized access
+	exploitation
+	Learning management system
+	privacy
+	data - structured, unstructured
+		structured stored in database
+		unstructured stored in external storage devices: hard disk, cloud...
+	GDPR, HIPAA, PCIDS
+	cracking passwords
+	priority vs sevierity
+	threat actor, bad actor, adversary = hacker
+
+CONTROLS: ( defense in depth )
+	physical
+	logical
+	administrative
+
+rules, regulations: government
+standards: organizations
+
+vulnerability: weakness
+threat: malware...
+risk: impacts, probability of incidents.
+
+risk mitigation steps:...
+
+APT: get in, remain undetected or continious access for long period
+
+HACKING PROCESS:
+	information gathering
+	scanning
+	gain access
+	persistence
+	clear digital footprints
+
+find the target's domain, ip adrs, mob no, entire network, state...
+website defacement
+gather the info about the front end tool used, server at cloud or physical?
+apache server or nginix server ???
+" exploitDB "- a website
+
+WRITTERN PERMISSION is better
+there are 1,70,030 ports. TCP+UDP
+
+financial, reputational consequences
+
+REQUIREMENTS:
+	cyber hygiene
+	software updates
+	pass phrase, management
+
+RESPONSIBILITY:
+	individual level- behaviour
+	organizational- implement protocols; awareness, vigilance culture
+	government- regulations, policies
+
+threat landscape:
+threat actors: financial gain, fun, political, ideological, competetive advantage, state sponsored, hacktivism( to promote social/ political causes)
+
+Threat actors types:
+	insider threats
+	external adversaries
+	APT
+
+criminal organizations
+
+extract money
+steal sensitive inforations
+fraudulent activities
+
+SKILLS:
+netsec
+code
+analitical
+communication
+lifelong learning
+adapt with evolving threats
+resilience, proficiency
+navigate with rapidly changing landscape
+
+CATCHA: to protect against automated bots
+
+------------------ APTITUDE  COMMUNICATION  TECHNICAL -------------------
