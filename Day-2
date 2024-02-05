@@ -1,16 +1,19 @@
-threat= has a potential to cause damage
+THREAT= has a potential to cause damage
 threat linked with vulnerability causes damage
-
+MALICIOUS INTENT!!!
 Threat actors types:
-  financial motives
-  terrorists
-  APT
-  Hacktivists
-  insiders
-  misconfigs/ mismanagement
-  script kiddies
---------------------------
+  criminal(s)
+  terrorists- by nonstate actors, politically/socially motivated, vilonce
+  APT- infiltrate, remain there, monitor
+  hacktivists- good intent but still illegal
+  insiders- imposter
+  misconfigs- mismanagement
+  script kiddies- noob with a tool
+  extortionists- forcible manner
+  state sponsored- cyber WAR
+------------------------------------
 Cybersecurity frameworks
-framework= provides base\ blueprint for development process
+framework= provides basement\ blueprint for development process
+set of guidelines, best practices for organizations
 NIST (US), ISO IEC 27000 series (EU)
-
+Need: to reduce vulnerabilities
