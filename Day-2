@@ -7,7 +7,10 @@ Threat actors types:
   APT
   Hacktivists
   insiders
-  misconfigs
+  misconfigs/ mismanagement
   script kiddies
 --------------------------
 Cybersecurity frameworks
+framework= provides base\ blueprint for development process
+NIST (US), ISO IEC 27000 series (EU)
+
