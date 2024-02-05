@@ -15,5 +15,16 @@ Threat actors types:
 Cybersecurity frameworks
 framework= provides basement\ blueprint for development process
 set of guidelines, best practices for organizations
-NIST (US), ISO IEC 27000 series (EU)
+NIST (US), ISO IEC 27000 series (EU), SOC-2, NERCCIP, HIPAA, GDPR, FISMA
 Need: to reduce vulnerabilities
+
+wikileaks
+OSINT tools
+Pimeyes tool
+
+TYPES:
+control framework
+program framework
+risks framework
+
+MITRE FRAMEWORK = ATTACK FRAMEWORK
