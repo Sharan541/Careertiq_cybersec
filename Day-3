@@ -22,7 +22,7 @@ DDos available in GitHub
 
 Network concept:
 ip address
-ports
+ports- the need for ports = 1 device use many service. causes congestion in multitasking generation. so have various, each port does 1 service.
 people send packet without ip address in dark web
 segmentation for security reasons. virtual segregation. home routuer: one public and more private adrs ok.
 but in a college, 60 people, 1 router has 1 public ip adrs. to which pvt adrs send the data???
