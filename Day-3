@@ -40,3 +40,4 @@ open wireshark in vbox, use ip address of real pc and ping it in the vmachine co
 use wireshark in vm and see the analysis
 the analysis is ping from vm to real PC.
 
+run wireshark in the background 24/7
