@@ -1,0 +1,63 @@
+PART 1:
+
+light weight but no GUI or desktop env but terminal
+websites hosted on linux servers
+Linux = an umberlla term for mutiple OS, based on UNIX (another OS, free)
+Various flavours of Linux with different functions, package managers.
+Ubuntu, Debian = some distributions of Linux
+Ubuntu server with 512MB RAM is possible
+Thin versions for light uses like traffic lights etc...
+First at 1991
+
+--- echo [echo SunnyDay, echo "Sunny Day"]
+--- whoami
+
+Interacting with file systems:
+--- ls = listing.  [ls, ls folder1]
+--- cd = change directory.  [cd folder2, ls, cd..]
+--- cat = concatenating. output contents of any file.
+--- pwd = print working directory.
+ctrl + l to clear
+
+web, linux dir uses "/"
+
+Searching for files:
+instead ls, cd. use find to automate things.
+--- find
+find -name pswds.txt = know name, location unknown
+find -name *.txt = search for all txt files (wildcard=*)
+--- grep = search file contents fr ur specific values. good to search in big file.
+grep "kali" access.log
+
+Intro to shell operators:
+--- & = run cmd in background
+--- && = combine 2 cmd in 1 line [ cmd1 && cmd2] 2 runs only if 1 is success
+--- > = output redirector. direct it elsewhere. [echo Hey > welcome] = a file welcome created and Hey is stored in it
+--- >> = same as >. but append instead replacing. [echo Hello >> welcome] = append Hello to welcome file.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PART 2:
+
+SSH protool between devices, encrypted form.
+execute commands on another device remotely.
+
+SSH to login to your machine:
+--- ssh username@ip-address = asks for password
+
+Intro to flags and switches:
+cmd with arguments...
+arguments identified with hyphen, a keyword known as flags or switches.
+flags and switches to extend behaviour of commands.
+--- ls
+--- ls -a (or) ls --all = find hidden files
+also, --help (or) -h as an argument
+
+man / manual page for documentation of commands.
+--- man ls = view manual pages for ls
+see in human readable form: -h (or) --human-readable
+
+
+
+
+
