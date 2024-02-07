@@ -58,6 +58,14 @@ man / manual page for documentation of commands.
 --- man ls = view manual pages for ls
 see in human readable form: -h (or) --human-readable
 
+Interacting with File system-2:
+--- touch = create file = touch note2
+--- mkdir = create folder/directory = mkdir folder2
+--- cp = copy file/folder = cp note note2 = contents of note copied to note2
+--- mv = move file/folder = move, rename a file/ folder = mv note2 note3
+--- rm = remove file/folder = rm note2, rm -R folder2 [ -R switch for folder ]
+--- file = determine file type = file has extensions = file note3
+
 
 
 
