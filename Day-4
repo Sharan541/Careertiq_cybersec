@@ -81,5 +81,19 @@ systemctl enable ssh
 sudo systemctl start ssh
 systemctl status ssh
 
+tcpdump = cli version of wireshark
+
+start your own server:
+use linux to start a server.
+
+pre installed apache?
+sudo systemctl start apache2
+
+connect fake and real with ssh connection.
+run fake as a server and acces it from real.
+sudo su = change to super user
+
+
+go and paste ip address of fake
 
 
