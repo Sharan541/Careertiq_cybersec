@@ -139,6 +139,7 @@ managed by kernel with process ID's
 --- top = insigts to running processes
 --- kill = kill a command after providing it's PID
 
+OS = split resources with namespaces. Splitting system.
 
 
 
