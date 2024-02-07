@@ -13,7 +13,7 @@ First at 1991
 --- whoami
 
 Interacting with file systems:
---- ls = listing.  [ls, ls folder1]
+--- ls = list the contents.  [ls, ls folder1]
 --- cd = change directory.  [cd folder2, ls, cd..]
 --- cat = concatenating. output contents of any file.
 --- pwd = print working directory.
@@ -33,10 +33,10 @@ grep "kali" access.log
 Intro to shell operators:
 --- & = run cmd in background
 --- && = combine 2 cmd in 1 line [ cmd1 && cmd2] 2 runs only if 1 is success
---- > = output redirector. direct it elsewhere. [echo Hey > welcome] = a file welcome created and Hey is stored in it
+--- > = output redirector. [echo Hey > welcome] = a file welcome created and Hey is stored in it
 --- >> = same as >. but append instead replacing. [echo Hello >> welcome] = append Hello to welcome file.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 PART 2:
 
@@ -65,6 +65,54 @@ Interacting with File system-2:
 --- mv = move file/folder = move, rename a file/ folder = mv note2 note3
 --- rm = remove file/folder = rm note2, rm -R folder2 [ -R switch for folder ]
 --- file = determine file type = file has extensions = file note3
+
+Permissions 101:
+certain users = certain access
+actions allowed for file/folder = read, write, execute
+--- ls -lh = list permissions of all files in the dir
+--- su user2 = switch to user2
+
+Users vs Groups:
+regular user vs system user
+permissions can be granular
+
+Switching between users:
+--- su command
+use root permissions through sudo if not root user
+read the man page of su to learn more
+--- su -l user2 = -l (or) --login
+su -l user = new login session
+su user = current environment.
+elevate priviliges with "sudo"
+
+permissions representation:
+- rwx rwx rwx
+file type
+for file owner
+for group owner of file
+for all other users
+
+Common Directories:
+/etc = root directory, stores files used by OS. eg: sudoers file
+/var = a root folder, stores frequently accessed data. eg: /var/log = stores log files. go to var, do ls.
+/root = home directory for root system user, not /home. data is stored here /home/root
+/tmp = root directory, store data needed once or twice. eg: enumeration scripts. go to tmp, do ls.
+similar to RAM on computers.
+--------------------------------------------------------------------------------------------------------------------
+
+PART3:
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
