@@ -134,8 +134,8 @@ Processes 101:
 programs running on machine = processes
 managed by kernel with process ID's
 --- ps = view running processes in current user's session
---- ps aux = see running process from 
---- top = insigts to running processes
+--- ps aux = see running process, some more info 
+--- top = more insights to running processes
 --- kill = kill a command by providing it's PID
 SIGTERM = clean kill
 SIGKILL = unclean kill
@@ -159,15 +159,47 @@ good use when copying files. Let it run, do other processes.
 ctrl + z to background a process.
 confirm the background process with (ps aux)
 --- fg = bring process to foreground
-
 locate processes, find the flag?
 
+
+
 Maintaining your system: automation:
-schedule some tasks to run after system booted.
 crontabs = a process, started during boot. manages cron jobs.
 crontabs needs 6 values: min, hour, date, month, day, cmd
-use * if no value
+use * if no value. Down = executed every 12 hours.
+--- 0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
+--- crontab -e = edit crontab. select editor like nano.
 
+Maintaining your system: package management:
+packages and software repositories.
+"apt" repos
+OS vendor repository. community repository = extend capability of OS.
+--- add-apt-repository = get additional repositories
+
+managing repos: add or remove:
+dpkg = package installer
+apt = updates packages when system gets updated.
+integrity check with GPG keys- gnu privacy guard.
+--- wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+= get GPG, use apt-key to trust it
+install the software that we have trusted and added to apt 
+--- apt update
+--- apt install sublime-text
+delete the previously added files, then
+--- apt remove sublime-text
+
+Maintaining your systems: Logs:
+Apache2 webserver, fail2ban service, UFW service = logs eg
+[access log, error log]
+
+
+crontabs
+apt
+dpkg
+gpg keys
+
+
+----------------------------------------------------------- E N D ------------------------------------------------------
 
 
 
