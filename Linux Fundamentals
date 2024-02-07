@@ -9,7 +9,7 @@ Ubuntu server with 512MB RAM is possible
 Thin versions for light uses like traffic lights etc...
 First at 1991
 
---- echo [echo SunnyDay, echo "Sunny Day"]
+--- echo [echo SunnyDay, echo "Sunny Day"] = print
 --- whoami
 
 Interacting with file systems:
@@ -44,15 +44,15 @@ SSH protool between devices, encrypted form.
 execute commands on another device remotely.
 
 SSH to login to your machine:
---- ssh username@ip-address = asks password, then go in
+--- ssh username@ip-address = ssh user at ip-address
 
 Intro to flags and switches:
 cmd with arguments...
-arguments identified with hyphen, a keyword known as flags or switches.
-flags and switches to extend behaviour of commands.
+
+cmd with arguments. a keyword = flags/ switches. to extend cmd behaviours. hyphen.
 --- ls
---- ls -a (or) ls --all = find hidden files
-also, --help (or) -h as an argument
+--- ls -a (or) --all = find hidden files
+--- ls --help (or) -h for help
 
 man / manual page for documentation of commands.
 --- man ls = view manual pages for ls
@@ -80,10 +80,9 @@ Switching between users:
 --- su command
 use root permissions through sudo if not root user
 read the man page of su to learn more
---- su -l user2 = -l (or) --login
-su -l user = new login session
+su -l user = new login session (-l or --login)
 su user = current environment.
-elevate priviliges with "sudo"
+elevate priviliges with "sudo": sudo su = as root user.
 
 permissions representation:
 - rwx rwx rwx
@@ -110,20 +109,20 @@ VIM:
 advanced text editor
 
 General or Useful utilities:
---- wget = download files from web
+--- wget = download files from web = web get
 wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
---- scp = securely transfer files (local to remote host)
-scp source_file username@remote-host-ip:destination_directory
+--- scp = securely transfer files (local to remote host) = secure copy
+scp source_file user@host-ip:destination_directory
 --- scp = copy files from remote to local
-scp user@remote-host-ip:/path/to/source/myfile.txt
+scp user@host-ip:/path/to/source/myfile.txt
 --- scp = copy an entire directory recursively
 scp -r myfolder/ user@remote-host-ip:/path/to/destination/
 
 
 Serve files from your host:
 Python = HTTPServer module = turns computer into web server
-other hosts use curl, wget to download it
---- python3 -m  http.server = run from the directory which has the files to serve (file eg: myfile)
+other hosts use [curl, wget] to download it
+--- python3 -m  http.server = run from directory which has the files to serve (file eg: myfile)
 from another terminal,
 --- wget http://ip-address:port-number/myfile
 disadvantage = no indexing. remember name, loc of file.
@@ -137,9 +136,41 @@ managed by kernel with process ID's
 --- ps = view running processes in current user's session
 --- ps aux = see running process from 
 --- top = insigts to running processes
---- kill = kill a command after providing it's PID
+--- kill = kill a command by providing it's PID
+SIGTERM = clean kill
+SIGKILL = unclean kill
+SIGSTOP = stop or suspend a process.
 
 OS = split resources with namespaces. Splitting system.
+to isolate processes for another. access to certain amount of computing power.
+PID 0 started when system boots = system's init like systemd.
+
+Launch manually/ Launch on boot
+--- systemctl = interact with systemd process/ daemon.
+systemctl [option] [service]
+option = start, stop, enable, disable
+eg: systemctl start apache2
+enable = start service on bootup of system
+
+process run in 2 states: background or foreground
+echo "Keer" = gives output
+echo "Keer" & = gives ID
+good use when copying files. Let it run, do other processes.
+ctrl + z to background a process.
+confirm the background process with (ps aux)
+--- fg = bring process to foreground
+
+locate processes, find the flag?
+
+Maintaining your system: automation:
+schedule some tasks to run after system booted.
+crontabs = a process, started during boot. manages cron jobs.
+
+
+
+
+
+
 
 
 
