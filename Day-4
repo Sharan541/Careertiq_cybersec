@@ -1,0 +1,85 @@
+Proxy an VPN:
+Internet is untrustable, anyone can listen.
+VPN = just encrypts our connection. a tunnel.
+Proxy = intermeditate between client and server.
+Tor uses proxy or vpn? = proxy.
+there are 6 proxy between client and server. 3 are openly open, 3 are ananyomous.
+No logs policy.
+
+Tails OS is safe. Tor adds only anoyimity and not safety. (only for educational purpose)
+
+initiate a communication with a server, clint sends SYN packet first.
+client, SYN = Hi. Server, SYN, ACK.
+
+3 way handshake. only with TCP.
+SYN = hi
+SYN, ACK = received, hi
+ACK = got it
+
+FIN at the end.
+
+UDP = no retransmission.
+QUIC = new L4 protocol. uses sockets
+
+HTTP methods and response codes:
+201 = created
+404 = not found
+4 = client side error
+5 = server side error
+2,4,5
+code start with 1 = informational message
+3 = redirection or switching protocols. http to https, login page to dashboard.
+
+first page = index.html
+
+elements of security:
+CIA++
+Encryption prevents copying. So saves Integrity??
+
+Tamper proof data
+
+difference between symmetric and asymmetric encryption and their realtime usage.
+EY
+
+Symmetric encryption in bank statements: first 4 lowercase, last 4 digits??
+Single password to sign in = symmetric = unsafe
+Symmetric = 1 key
+Asymmetric - 2 keys
+3 way handshake does it. TLS handshake does it.
+no lock symbol = http = no TLS handshake. No Asymmetric encryption.
+WIRESHARK!!!!!!!
+Public key exchange between client and server
+PKI = public key infrastructure
+Keys are there!! = in browser.
+to check the public, private key. open terminal, 
+
+in terminal
+pwd
+ls
+ls -a
+see hidden files
+--- ssh-keygen
+
+pwd
+ls
+ls -la
+ls -al
+ls -a
+cd .ssh
+cat id_rsa
+
+ll
+ssh = port 22
+cloud nowadays. secure remote connection.
+ssh = shell = no GUI and only CLI
+
+
+windows = ssh = access linux machine.
+windows = ssh client = pre installed
+
+systemctl enable ssh
+sudo systemctl start ssh
+systemctl status ssh
+
+
+
