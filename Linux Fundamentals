@@ -17,7 +17,8 @@ Interacting with file systems:
 --- cd = change directory.  [cd folder2, ls, cd..]
 --- cat = concatenating. output contents of any file.
 --- pwd = print working directory.
-ctrl + l to clear
+ctrl + l = clear
+ls, cat difference = cat displays the file content. ls gives info about file, directories.
 
 web, linux dir uses "/"
 
