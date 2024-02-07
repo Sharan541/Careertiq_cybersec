@@ -36,8 +36,12 @@ without ports= congestion, delay
 logical entry points
 1 ip adrs distributed to all ports to get services
 
-open wireshark in vbox, use ip address of real pc and ping it in the vmachine command.
-use wireshark in vm and see the analysis
-the analysis is ping from vm to real PC.
 
-run wireshark in the background 24/7
+2 logical systems: realPC + VM
+open wireshark in VM and run it.
+Go to realPC - cmd - ipconfig. note the realPC ip-address.
+Go to VM - cmd - ping realPC-ip-address.
+see the details in wireshark running in the VM.
+Can look into data and read un-encrypted packets like when HTTP, telnet is used.
+
+run wireshark in the background 24/7 by entities for security.
