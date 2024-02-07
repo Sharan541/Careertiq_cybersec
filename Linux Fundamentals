@@ -165,7 +165,8 @@ locate processes, find the flag?
 Maintaining your system: automation:
 schedule some tasks to run after system booted.
 crontabs = a process, started during boot. manages cron jobs.
-
+crontabs needs 6 values: min, hour, date, month, day, cmd
+use * if no value
 
 
 
