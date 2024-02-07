@@ -44,7 +44,7 @@ apache server or nginix server ???
 " exploitDB "- a website
 
 WRITTERN PERMISSION is better
-there are 1,70,030 ports. TCP+UDP
+there are 65,535 * 2 = 1,31,070 ports. TCP+UDP
 
 financial, reputational consequences
 
