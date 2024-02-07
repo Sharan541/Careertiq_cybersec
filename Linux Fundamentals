@@ -44,7 +44,7 @@ SSH protool between devices, encrypted form.
 execute commands on another device remotely.
 
 SSH to login to your machine:
---- ssh username@ip-address = asks for password
+--- ssh username@ip-address = asks password, then go in
 
 Intro to flags and switches:
 cmd with arguments...
@@ -102,9 +102,42 @@ similar to RAM on computers.
 
 PART3:
 
+Terminal text editors:
+Nano:
+--- nano myfile = create or edit a file = launches nano
+ctrl+X to exit nano [^X Exit]
+VIM:
+advanced text editor
+
+General or Useful utilities:
+--- wget = download files from web
+wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
+--- scp = securely transfer files (local to remote host)
+scp source_file username@remote-host-ip:destination_directory
+--- scp = copy files from remote to local
+scp user@remote-host-ip:/path/to/source/myfile.txt
+--- scp = copy an entire directory recursively
+scp -r myfolder/ user@remote-host-ip:/path/to/destination/
 
 
+Serve files from your host:
+Python = HTTPServer module = turns computer into web server
+other hosts use curl, wget to download it
+--- python3 -m  http.server = run from the directory which has the files to serve (file eg: myfile)
+from another terminal,
+--- wget http://ip-address:port-number/myfile
+disadvantage = no indexing. remember name, loc of file.
+updog = more better light weight web server.
+after using wget, ls, ls -l, ls -a, cat myfile, see the contents.
+ctrl + c to stop the python made server
 
+Processes 101:
+programs running on machine = processes
+managed by kernel with process ID's
+--- ps = view running processes in current user's session
+--- ps aux = see running process from 
+--- top = insigts to running processes
+--- kill = kill a command after providing it's PID
 
 
 
