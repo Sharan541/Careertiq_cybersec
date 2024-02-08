@@ -1,4 +1,3 @@
--------------------------------------------------------------------
 DAY 1: Vignesh sir,
 
 technical terms:
@@ -31,11 +30,11 @@ risk mitigation steps:...
 APT: get in, remain undetected or continious access for long period
 
 HACKING PROCESS:
-	information gathering
-	scanning
-	gain access
-	persistence
-	clear digital footprints
+	1 = information gathering
+	2 = scanning
+	3 = gain access
+	4 = persistence
+	5 = clear digital footprints
 
 find the target's domain, ip adrs, mob no, entire network, state...
 website defacement
@@ -76,6 +75,6 @@ adapt with evolving threats
 resilience, proficiency
 navigate with rapidly changing landscape
 
-CATCHA: to protect against automated bots
+CAPTCHA: to protect against automated bots
 
 ------------------ APTITUDE  COMMUNICATION  TECHNICAL -------------------
