@@ -136,3 +136,12 @@ text to md file. a tool.
 | to combine
 echo sainsta | md5sum
 
+hashcat = gpu based tool
+hydra = online password cracking tool
+jhontheripper = cpu based tool
+
+
+echo saish | md5sum > sfile.txt
+ls
+cat sfile.txt
+
