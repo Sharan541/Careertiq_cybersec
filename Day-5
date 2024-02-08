@@ -1,66 +1,45 @@
-wireshark
-3 way handshake
-packet analysis
-
-
-wireshark
-start capture
-open firefox
-https website
-go to wireshark
-click stop
+fakeVM:
+start wireshark capture
+open https website in firefox
+stop wireshark capture.
 
 filter the traffic
-find the ip address
-ip.addr == ip address
-filter the traffi
+ip.addr == @ip-address
 
-hashing = fixed length hash
-hash = 1 way
+encryption and hashing difference:
+hashing = 1 way = irreversible
 encryption = 2 way
+hashing = fixed length hash
 integrity check = check for alteration
-
-hash calc = share hash value to the receiver to check for changes
-hashing is irreversible
+share hash value to the receiver to check for changes
 can save in database too. but encryption = no.
 
 registry is for control, not for storage
 
-c
-windows
-system32
-config
-sam
-
-cant read the sam file. cant while on. will need to read the hard disk. retrieve the sam.
+:c\windows\system32\config\sam
+can't read sam file when system is on.
+need to read hard disk, retrive sam.
 
 Linux = shadow file
 /etc/shadow
 
-salting = adding random values in between the hash values to make it un crackable
+salting = adding random values in between hash values to make it un crackable
 
-
-etc/passwd
+/etc/passwd
 /bin/zsh
-cat /etc/passwd | grep /bin/zsh
-
-logs of your web server stored in kali
-
-
-cd /var/log
-ls
-cd apache2
-ls
+/var/log
+--- cat /etc/passwd | grep /bin/zsh
+--- cd /var/log = log of ur server stored here
+--- cd apache2
 
 to search in a folder
-grep -r folder
+--- grep -r folder
+--- sudo grep -r "19.168.145.144"
 
-sudo grep -r "19.168.145.144"
-check the acces logs of the yesterday server
+check acces logs of the yesterday server
 concentrate on one ip address
- cat ssh.log
-grep -r parrot
-pipe symbol
+--- cat ssh.log
+--- grep -r parrot
 
 dig a log to find an incident
 incident = something that affects CIA
@@ -74,19 +53,16 @@ system completly compromised = intrusion
 event = alerts = observable occurence
 intrusion   incident    event = know the difference
 
-affect CIA = incident.
-/var/log = logs in linux
 in windows = event manager or event viewer
 SIEM tools to manage Event Viewer to see logs in windows
 
-DLP tool to make sure the analyser  = prevents unauthorized copy.
-cant copy, cant mail the logs
-no copy, no delete, no alter. all in logs. will be analyzed.
-wrong alert = FP.
-alert came, no attack.
+DLP tool:
+to make sure analyser prevents unauthorized copy.
+no copy, no share, no alter. all in logs are analysed.
+
+[ FP, TP, FN, TN ]
+wrong alert = FP = alert came, no attack.
 TP = attack happened, alert happened.
-TP FP TN FN = confusing.
-FP vs TP =
 TN = attack happened, no alert came,
 SIEM not properly configured.
 FN = mostly dont happen.
