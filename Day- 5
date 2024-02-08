@@ -92,3 +92,47 @@ SIEM not properly configured.
 FN = mostly dont happen.
 
 
+brute force attack= use all permutations and combinations to find password.
+4 digit pin = try all possible combo. = 10000 possibilities.
+lowercase, 5 digit bruteforce attack = 1 crore...
+10 digit = 141 trillion possibilities in lower case alone. 12 to 13 days to crack.
+
+GPU
+CPU vs GPU. why do we need?
+for fasting math calculations.
+graphics card = 10 times faster than CPU.
+GPU based machine.
+Crackers/ miners
+spend 5 lakhs for a system. for gpu.
+pay them in bitcoins. you give hash, they get password. you pay 1000.
+
+5 char = 11 minutes with GPU.
+Password cracking in kali = CPU over heat, cpu fails.
+100 degree = cpu burns.
+change motherboard itself.
+
+brute force complications.
+
+digits, symbols, upper case, lower case = buteforce takes a lifetime.
+passphrase = infinity war.
+
+dictionary attack = efficient than brute force
+password list famous one = rockyou.txt
+137mb file in github
+1.6 crore passwrd there. find yours.
+most common use passwords
+
+birthday attack
+collect info from social media, create own word list
+
+CRUNCH tool available in github. create own wordlist
+
+use rockyou to find a hash and try to crack it.
+MD5 hashing algorithm.
+
+text to md file. a tool.
+---md5sum anyword
+
+| to combine
+echo sainsta | md5sum
+
