@@ -43,15 +43,12 @@ concentrate on one ip address
 
 dig a log to find an incident
 incident = something that affects CIA
-do full analysis
-find root cause
-
-change the password
-
-virtualbox > workstation
+do full analysis, find root cause
 system completly compromised = intrusion
 event = alerts = observable occurence
 intrusion   incident    event = know the difference
+
+virtualbox > workstation
 
 in windows = event manager or event viewer
 SIEM tools to manage Event Viewer to see logs in windows
@@ -61,12 +58,12 @@ to make sure analyser prevents unauthorized copy.
 no copy, no share, no alter. all in logs are analysed.
 
 [ FP, TP, FN, TN ]
-wrong alert = FP = alert came, no attack.
+FP = wrong alert = alert came, no attack.
 TP = attack happened, alert happened.
 TN = attack happened, no alert came,
-SIEM not properly configured.
 FN = mostly dont happen.
-
+SIEM not properly configured.
+---------------------------------------------------------------------------------------
 
 brute force attack= use all permutations and combinations to find password.
 4 digit pin = try all possible combo. = 10000 possibilities.
