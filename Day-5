@@ -4,7 +4,7 @@ open https website in firefox
 stop wireshark capture.
 
 filter the traffic
-ip.addr == @ip-address
+- - ip.addr == @ip-address of the website?
 
 encryption and hashing difference:
 hashing = 1 way = irreversible
@@ -23,7 +23,7 @@ need to read hard disk, retrive sam.
 Linux = shadow file
 /etc/shadow
 
-salting = adding random values in between hash values to make it un crackable
+salting = adding random values in between hash values to make it uncrackable
 
 /etc/passwd
 /bin/zsh
