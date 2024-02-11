@@ -28,8 +28,10 @@ salting = adding random values in between hash values to make it uncrackable
 /etc/passwd
 /bin/zsh
 /var/log
+[ /bin, /var, /etc ]
+
 --- cat /etc/passwd | grep /bin/zsh
---- cd /var/log = log of ur server stored here
+--- cd /var/log = log of server stored here
 --- cd apache2
 
 to search in a folder
@@ -39,7 +41,7 @@ to search in a folder
 check acces logs of the yesterday server
 concentrate on one ip address
 --- cat ssh.log
---- grep -r parrot
+--- grep -r parrot (or) user
 
 dig a log to find an incident
 incident = something that affects CIA
@@ -58,63 +60,47 @@ to make sure analyser prevents unauthorized copy.
 no copy, no share, no alter. all in logs are analysed.
 
 [ FP, TP, FN, TN ]
-FP = wrong alert = alert came, no attack.
-TP = attack happened, alert happened.
-TN = attack happened, no alert came,
-FN = mostly dont happen.
+-- attack alert format
+FP = no attack but alert
+TP = attack, alert
+TN = attack, no alert. TN is dangerous
+FN = no attack, alert
 SIEM not properly configured.
----------------------------------------------------------------------------------------
 
-brute force attack= use all permutations and combinations to find password.
-4 digit pin = try all possible combo. = 10000 possibilities.
-lowercase, 5 digit bruteforce attack = 1 crore...
-10 digit = 141 trillion possibilities in lower case alone. 12 to 13 days to crack.
+brute force = explore all options until answer found.
+permutations and combinations.
+4 digit pin. find possibilities. 1000.
+10 digit, lowercase = 141 T possible. 12 days to crack.
 
-GPU
-CPU vs GPU. why do we need?
-for fasting math calculations.
-graphics card = 10 times faster than CPU.
-GPU based machine.
-Crackers/ miners
-spend 5 lakhs for a system. for gpu.
-pay them in bitcoins. you give hash, they get password. you pay 1000.
-
+need for CPU + GPU
+GPU = faster mathematical calculations
+GPU = 10x of CPU.
+GPU based machine = Crackers/ miners = a service.
 5 char = 11 minutes with GPU.
-Password cracking in kali = CPU over heat, cpu fails.
-100 degree = cpu burns.
-change motherboard itself.
-
-brute force complications.
-
-digits, symbols, upper case, lower case = buteforce takes a lifetime.
+crack with kali = CPU alone. overheat, fail too.
+change motherboard.
+brute force complications:
+digits, symbols, upper, lower case = buteforce takes a lifetime.
 passphrase = infinity war.
 
-dictionary attack = efficient than brute force
-password list famous one = rockyou.txt
-137mb file in github
-1.6 crore passwrd there. find yours.
-most common use passwords
+dictionary attack >> brute force attack (efficiency)
+various password lists available. famous = "rockyou.txt". 137mb file in github
+1.6 crore most comenly used passwords there.
+
 
 birthday attack
 collect info from social media, create own word list
+[ CRUNCH ] tool available in github. create own wordlist
 
-CRUNCH tool available in github. create own wordlist
-
-use rockyou to find a hash and try to crack it.
+find a hash, crack it with rockyou.txt
 MD5 hashing algorithm.
 
 text to md file. a tool.
----md5sum anyword
-
-| to combine
-echo sainsta | md5sum
+[ | = to combine ]
+--- echo saish | md5sum > sfile.txt
+--- ls
+--- cat sfile.txt
 
 hashcat = gpu based tool
-hydra = online password cracking tool
+hydra = online based tool
 jhontheripper = cpu based tool
-
-
-echo saish | md5sum > sfile.txt
-ls
-cat sfile.txt
-
