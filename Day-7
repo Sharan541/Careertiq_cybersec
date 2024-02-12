@@ -1,0 +1,20 @@
+need node, ruby, php
+dsa
+os ...
+-------------------------------
+crack <-
+
+veracrypt = disk encryption tool
+harddisk, pendrive. create a partition, lovk what's needed
+uses asymmetric encrytion.
+use 2 diff passwords
+force you to open a file = show normal data.
+
+use john tool to extract the past
+
+veracrypt2john
+
+passphrase = good
+
+partitioned one is sharable. portable
+
