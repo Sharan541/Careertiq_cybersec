@@ -95,6 +95,19 @@ ctrl+ x
 ( as i have dragged and dropped the rockyou.txt file in desktop )
 better to do with no directory
 
+cd Desktop
+pwd
+ls
+cat test.pdf
+pdf2john test.pdf /home/user/Desktop
+pdf2john test.pdf > hash7.txt
+cat hash7.txt
+nano hash7.txt
+cat hash7.txt
+hashcat test.pdf rockyou.txt
+hashcat --help
+hashcat -m 10700 hash7.txt /home/user/Desktop/rockypu.txt -O
+john hash7.txt -w=rockyou.txt
 
 
 --- locate command = 
