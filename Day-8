@@ -1,0 +1,45 @@
+data classification:
+4 types
+confidential
+public
+internal use
+highly sensitive
+
+linux fundamentals
+windows too
+
+file management in python different than linux
+
+magic method = __name__
+
+python filename
+
+file management
+permission management
+
+- rwx rwx
+- = file
+d = directory
+l = link
+confuse forensic investigators with tampering
+
+see in ls -al
+
+sudo su = root user
+mkdir Yamada
+ls
+cd Yamada
+touch Ryo
+exit
+ll
+cd Yamada
+cat Ryo
+touch Hai bro > Ryo  =  permission denied
+
++ = add a permission
+
+
+touch
+echo
+nano
+mousepad
