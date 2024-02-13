@@ -38,6 +38,12 @@ touch Hai bro > Ryo  =  permission denied
 
 + = add a permission
 
+ugo = a
+user
+group
+other
+all
+
 
 touch
 echo
