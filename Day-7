@@ -1,42 +1,22 @@
-need node, ruby, php
-dsa
-os ...
--------------------------------
-crack <-
+Learn in a holistic manner as a computer science engineer.
 
 veracrypt = disk encryption tool
-harddisk, pendrive. create a partition, lovk what's needed
-uses asymmetric encrytion.
-use 2 diff passwords
-force you to open a file = show normal data.
-
-use john tool to extract the past
-
-veracrypt2john
-
+partition a disk, encrypt that too = share it/ portable
+can't grow or shrink
+use 2 different passwords to show different data when forced
+encryption algorithm
+veracrypt2john = crack the password of the encrypted disk
 passphrase = good
+create, mount disk in veracrypt
 
-partitioned one is sharable. portable
+bctextencoder = simple.
+encrypt text, share it.
+symmetric = share password as well.
 
-cant expand or shrink
+compliance terms = regulations,  standards,  policies,  procedures.
 
-create
-mount
-
-create volume like this and save file from hacking. and safe in cloud too.
-portable too.
-in mobile.
 --------------------------------
 
-bctextencoder = encode text simply and share it.
-encrypt data, share.
-symmetric = transfer password as well. so..
-
-compliance terms:
-regulations
-standards
-policies
-procedures
 
 iso/iec 27k, nist, pci dss = standards
 regulations = gdpr, hipaa, ccpa
