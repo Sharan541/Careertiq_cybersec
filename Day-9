@@ -30,3 +30,10 @@ groupadd -o -g 1010 mygroup
 groupadd -r mysystemgroup
 groupadd -K GID_MIN=1200 -K GID_MAX=1500 mygroup
 groupadd -p grouppassword mygroup
+
+All Linux running in NAT. So unable to connect. Isolated invironment.
+Even if this os got hacked, windows os outside is safe.
+
+change from NAT to Bridged adapter
+and ping RealPC from FakeVM
+SYSTEM at RISK
