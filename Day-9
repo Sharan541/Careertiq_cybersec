@@ -1,0 +1,32 @@
+sudo useradd jane
+sudo id jane
+sudo passwd jane
+sudo useradd -m jane
+ls -la /home/jane/
+sudo useradd -m -d /opt/jane jane
+sudo useradd -u 1500 jane
+id -u jane
+sudo useradd -g users jane
+id -gn jane
+sudo useradd -g users -G wheel,docker john
+id john
+sudo useradd -s /usr/bin/zsh john
+grep john /etc/passwd
+sudo useradd -c "Test User Account" john
+grep john /etc/passwd
+sudo useradd -e 2025-01-22 john
+sudo chage -l john
+sudo useradd -r john
+useradd -D
+sudo useradd -D -s /bin/bash
+sudo useradd -D | grep -i shell
+
+groupadd [OPTIONS] GROUPNAME
+groupadd mygroup
+groupadd -f mygroup
+groupadd -g 1010 mygroup
+getent group | grep mygroup
+groupadd -o -g 1010 mygroup
+groupadd -r mysystemgroup
+groupadd -K GID_MIN=1200 -K GID_MAX=1500 mygroup
+groupadd -p grouppassword mygroup
