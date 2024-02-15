@@ -32,6 +32,7 @@ add Ramya as new user, move her to HR group
 move Ramya to HR group
 --- usermod -G HR Ramya
 
+do same for another new user
 --- adduser Gayathri
 --- usermod -G HR Gayathri
 
@@ -42,7 +43,6 @@ view users in shadow file
 --- cat /etc/shadow
 ---------------------------
 login as Ramya, explore directories and change permissions:
-
 switch user from root to Ramya
 GUI, menu, logout, switch user, login as Ramya, open terminal.
 
@@ -76,14 +76,15 @@ logout
 --- cd Gayathri
 permission denied
 
---- chmod u+rwx   = add for user
---- chmod u+rw   = add for user
+--- chmod u+rwx   = add rwx for user
+--- chmod u+rw   = add rw for user
 --- chmod o+r   = add read for others
---- chmod g-rwx   = remove for group
+--- chmod g-rwx   = remove rwx for group
 
 user
 group
 others
+-all
 ----------------------
 
 switch user, login as Gayathri:
@@ -98,8 +99,8 @@ or
 explore permissions
 
 2 types:
-symbolic permission
-absolute permission
+symbolic permission  =  rwx
+absolute permission  =  octal numbers
 
 octal numbers:
 7 = rwx
