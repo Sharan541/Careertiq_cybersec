@@ -1,21 +1,17 @@
 data classification:
-4 types
-confidential
-public
-internal use
-highly sensitive
+4 types = public, confidential, internal use, highly sensitive
 
-linux fundamentals
-windows too
+OS fundamentals:
+refer CCST, tryhackme fundamentals, 60 cmd from youtube = Linux
+later for Windows and android
 
-file management in python different than linux
+file management:
+different in Linux and Python
 
-magic method = __name__
-
+in python, magic method = __name__
 python filename
 
-file management
-permission management
+file management, permission management
 
 - rwx rwx
 - = file
@@ -23,25 +19,25 @@ d = directory
 l = link
 confuse forensic investigators with tampering
 
-see in ls -al
+--- ls -al
+--- ls -l
 
-sudo su = root user
-mkdir Yamada
-ls
-cd Yamada
-touch Ryo
-exit
-ll
-cd Yamada
-cat Ryo
-touch Hai bro > Ryo  =  permission denied
+activity:
+--- sudo su
+--- mkdir Yamada
+--- ls
+--- ls -l
+--- cd Yamada
+--- touch Ryo.txt
+--- exit
+--- ll
+--- cd Yamada
+--- cat Ryo.ttxt
+touch "Hai bro" > Ryo.txt = permission denied
 
-+ = add a permission
-
-ugo = a
 user
 group
-other
+others
 all
 
 
