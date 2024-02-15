@@ -78,6 +78,9 @@ permissions can be granular
 
 User management:
 --- sudo adduser username
+--- sudo usermod -aG sudo username
+--- sudo deluser username
+--- 
 
 
 Switching between users:
