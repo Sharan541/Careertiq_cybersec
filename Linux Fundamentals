@@ -76,6 +76,10 @@ Users vs Groups:
 regular user vs system user
 permissions can be granular
 
+User management:
+--- sudo adduser username
+
+
 Switching between users:
 --- su command
 use root permissions through sudo if not root user
