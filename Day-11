@@ -1,0 +1,54 @@
+SIEM=
+
+Security information and event management:
+
+event = observable occurence
+
+different logs
+
+need for logs:
+
+analyze ssh logs for authorized remote connection.
+time, location, ip-address to check.
+
+create rules to capture and create logs.
+
+capture what?
+
+log if someone scans for open ports.
+
+port 80, 443
+
+ports = gateways/ entry points
+
+port scanning = an observable occurence = event
+
+use case.
+
+firewall logs.
+
+active windows firewall?
+
+need for firewall
+
+firewall rules:
+inbound rules
+outbound rules
+
+inturrupts the network layer.
+windows defender firewall with advanced security
+
+use firewall to make a system to allow only one ip-address.
+filter un-wanted traffic.
+create the rules.
+
+a remote system for a team.
+in that remote system, in its firewall, configure it to allow only the five ip-address of the team
+
+ur system, trying illegal website = firewall blocks it.
+create a simple rule.
+outbound rules.
+
+
+
+
