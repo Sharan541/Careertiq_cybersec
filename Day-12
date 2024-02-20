@@ -9,3 +9,6 @@ to monitor a machine, install the univeral forwarder on it.
 
 one with splunk + universal forwarder in many systems.
 
+documentation inside:
+create an user for splunk
+create a group for splunk
