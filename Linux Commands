@@ -64,6 +64,9 @@ usermod -aG feelings gayu
 gpasswd -d gayu feelings
 su saish
 userdel gayu
+
+usermod change name how?
+
 groupdel feelings
 
 useradd
