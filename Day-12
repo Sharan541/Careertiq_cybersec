@@ -1,0 +1,11 @@
+Install Splunk on real PC
+Install Splunk Universal Forwarder on fake VM
+
+see the documentation for installation on website
+
+need= no need to upload manually. logs collected automatically.
+
+to monitor a machine, install the univeral forwarder on it.
+
+one with splunk + universal forwarder in many systems.
+
