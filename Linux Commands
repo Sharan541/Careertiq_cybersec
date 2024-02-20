@@ -1,0 +1,254 @@
+LINUX Commands:
+
+pwd  =  where am i
+ls  =  what's inside folder
+ls -a
+ls -l
+ls -al
+cd  =  go there
+cd ~  =  cd to home
+cd /home
+cd /  =  cd to root
+cd root
+cd bin
+cd sbin
+cd ..  =  get back
+
+whoami  =  self?
+clear  =  clear
+cat  =  what's inside file
+cat ls  =  what's inside list file
+cp  =  copy
+cp ls saish  =  use saish for ls cmd too
+sudo  =  pretend to be admin
+
+rm  =  removes files
+rm ls  =  remove the list file
+cat cat
+adduser  =  adds new user
+adduser supersai
+which  =  find location
+which cat
+
+ps  =  process status
+su root
+sudo su
+id  =  gives details
+hostname  =  as it is
+uname
+uname -r
+uname -a
+ifconfig
+ss
+netstat
+env
+lsusb
+lsblk
+lsof
+who
+man  =  manual for a file
+man ls
+apropos ls
+us
+
+adduser saish
+useradd gayu
+passwd saish
+usermod --help
+su gayu
+visudo
+groupadd feelings
+groups
+usermod -aG feelings saish
+usermod -aG feelings gayu
+gpasswd -d gayu feelings
+su saish
+userdel gayu
+groupdel feelings
+
+useradd
+usermod
+userdel
+groupadd
+groupmod
+groupdel
+
+
+cat /etc/passwd  =  look at users
+cat /etc/group  =  look at groups
+
+apt edit -sources
+apt --help
+apt list
+apt show nmap
+apt search nmap
+apt remove pidgin
+sudo apt update && sudo apt upgrade
+apt install git
+
+pstree
+systemctl start ssh
+systemctl enable ssh
+systemctl status nginx
+ps -u user
+ps -u user |grep firefox
+pgrep firefox  =  find process id by name
+kill process-id
+ps --help simple
+ps -aux
+top
+htop
+ping -c networkchuck.com
+sleep 30
+jobs
+bg 1
+fg 1
+kill 1
+pkill 1 ping
+
+
+---------------------------------
+
+cd /home
+mkdir cit
+cd cit
+mousepad joinerslist.txt
+ll -l
+sudo newusers joinerslist.txt
+ls /etc/passwd
+ll
+cd /home/cit
+sudo mkdir TeamC
+cd TeamC
+touch Astrainfo.txt
+ll TeamC
+sudo groupadd TeamC
+sudo usermod -G TeamC saish
+sudo usermod -G TeamC joe
+sudo usermod -G TeamC rahul
+ll
+members --all TeamC
+chown --help
+chown -R saish:TeamC TeamC
+ll
+chmod 700 TeamC
+
+
+=================================================================================
+
+ssh saisha@96.149.117.8
+ls
+ls -l = lists them
+ls -a = hidden files too
+pwd
+cd /usr/bin
+touch letter.txt
+touck all the five are files
+touch linode{1..10}
+touch -d tomorrow goodmorning.txt
+echo hai
+echo hai > message.txt
+nano message.txt
+vim message.txt
+cat message.txt
+shred message.txt
+cat message.txt
+
+mkdir radararea
+ls
+cp message.txt ./radararea/message.txt
+mv message.txt ./radararea/message.txt
+rm message.txt
+rmdir radararea
+rmdir -r radararea
+
+ln -s letter.txt filelink
+clear
+whoami = end of existential crisis
+useradd shraddha
+adduser deepika  =  set parameters
+su deepika
+exit
+passwd shraddha
+passwd
+
+apt update
+apt install finger
+finger shraddha
+
+man finger
+man man
+man cat
+
+whatis finger
+which finger
+whereis finger
+
+wget https://raw.githubcontent.com/...  =  get data from web
+ls
+
+curl https://raw.git..... > quantum1.txt
+zip quantum1.zip quantum1.txt
+unzip quantum1.zip
+
+cat quantum1.txt
+less quantum1.txt
+head quantum1.txt
+tail quantum1.txt
+cmp gayu.txt saish.txt  =  compare 2 files
+diff gayu.txt saish.txt  =  tells the difference in 2 files
+cat message.txt | grep sort
+find / -name "quantum1"
+find . -type f -empty
+find . -perm /a=x
+chmod +x message.txt  =  change modifications
+chown shraddha message.txt  =  change ownership
+
+ifconfig
+ip address
+ip address | grep eth0
+ip address | grep eth0 | grep inet
+ip address | grep eth0 | grep inet | awk '{print $2}'
+
+cat /etc/resolv.conf
+resolvectl status
+ping saishportfolio.com
+ping -c 5 saishportfolio.com
+ping -c 5 -s 500 saishportfolio.com
+
+traceroute saishportfolio.com
+
+netstat
+netstat -tulpn
+ss
+
+ufw allow 80
+ufw status
+ufw enable
+
+uname
+uname -a
+
+apt install neofetch
+neofetch
+cal
+
+echo "4+5+6" | bc
+
+free
+df
+df -H
+ps
+ps -aux
+top
+htop
+
+ps -aux | grep thisisme
+kill -9 6659
+pkill -f thisisme
+
+systemctl stop apache2
+history
+sudo reboot
+sudo shutdown
+sudo shutdown -h now
