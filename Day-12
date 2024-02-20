@@ -12,3 +12,27 @@ one with splunk + universal forwarder in many systems.
 documentation inside:
 create an user for splunk
 create a group for splunk
+
+chown what?
+change username how?
+
+
+a new user named splunkfwd
+keepgoing.
+splunk's username = MrSplunk   -   MrSplunkdrowssap
+
+service started
+need to configure the splunk UF now
+
+now go to spunk in real PC -> settings -> forward and receive -> new receiving port -> 9997 -> 
+
+config it to receive logs from the sender
+
+now configure the forwarder:
+
+understand the 4 diff config files
+
+revise ep2 lfh for linux structure
+
+and ... x
+
