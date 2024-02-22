@@ -210,11 +210,9 @@ access log files
 ----------------------------------------------------------- E N D ------------------------------------------------------
 
 
---- sudo usermod -l saish saisharan
+--- sudo usermod -l chandru saish
 --- usermod  or  chmod
 --- gpasswd
---- 
-
 
 
 
