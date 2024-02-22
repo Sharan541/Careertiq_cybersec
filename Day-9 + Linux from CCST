@@ -126,8 +126,3 @@ switch user, login as Ramya
 
 switch user, login as user
 close the vm
-
------------------------------------------------------------------
-
-sudo usermod -l chandru saish
-gpasswd
