@@ -65,3 +65,7 @@ splunk list forward-server
 #done
 
 as the admin, refresh page, see users adding in...
+
+
+admin:
+forwarders -> deployment :see the clients or users
