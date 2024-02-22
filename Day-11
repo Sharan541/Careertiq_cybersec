@@ -49,6 +49,54 @@ ur system, trying illegal website = firewall blocks it.
 create a simple rule.
 outbound rules.
 
+anti-virus = identifies malware = behaviour based, signature based.
+malicious software = malware
+
+signature based
+
+splunk download.
+download md5 to verify your bits = signature based for verification = compare hashes
+hashcalc or hashcalculator.
+== check for integrity.
+
+virus total platform = check with 40 + companies = better than one anti-virus.
+
+macro virus.
+write script in word document or excel document
+
+try installing utorrent. if system blocks it, your antivirus is working.
+
+virustotal uses the hash value to find whether it is malware or not.
+check signature.
+calculate hash, match with its data base.
+
+only anti virus = untrustable
+layered defence is necessary.
+
+hashcalc
+virustotal
+
+downloading cracked version of games, spotify mod, netflix mod
+modified files.
+use virus total and check it.
+
+SIEM = all in one tool = correlate all these activities. give us the result if it is malicious or not.
+
+Splunk is one of those.
+
+companies keep updating the signature
+
+windows logs = @ event viewer.
 
 
+go to event viewer, go to security logs. save selected events in desktop.
+upload in splunk.
+
+source="Windows logs.evtx"
+search filter in splunk
+
+do filters. data wise, last 24 hours...
+
+
+windows security log ecyclopedia
 
