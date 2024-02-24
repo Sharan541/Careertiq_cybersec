@@ -1,1 +1,29 @@
+threat
+breach
+intrusion
+zero day
+event
+exploit
+vulnerability
+incident
+
+SIEM:
+collect log event data from various sources
+correlate data, identify threats, anomalies
+generate alerts with predefined rules
+
+SIEM
+IDS/IPS
+Firewall
+Endpoint protection
+UEBA
+SOAR
+
+laws, regulations, compliance frameworks
+GDPR, HIPAA, PCI DSS, NIST
+
+HMAC
+AES
+DES
+RSA
 
