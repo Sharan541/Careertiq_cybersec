@@ -27,3 +27,27 @@ AES
 DES
 RSA
 
+Standards = best practices, guidelines
+Regulations = legal requirements
+Compliance = specific security protocols
+data = public, internal, confidential, sensitive
+assessment criteria
+classiication policy
+documentation, communication
+
+detect
+asses
+contain
+investigate
+remediation
+communicate
+document
+
+collection
+normalization
+correlation
+alerting
+investigation
+response
+report
+
