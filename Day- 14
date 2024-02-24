@@ -1,0 +1,31 @@
+guide
+splunk installation manual
+windows, linux
+universalforwarder manual
+windows, linux
+SIEM vs SOAR
+SIEM vs TIP (threat intelligence platform)
+... these are all different cybersecurity solutions
+
+netsec:
+firewall
+ips
+waf - web application firewall
+proxy server
+segmentation
+firewall rules and deployment
+firewall monitoring and management
+
+access control
+remote access vpn
+zero trust network access
+data loss prevention
+email security
+
+VAPT- vulnerability assesment and pentesting
+va = find weakness, scanning and analyzing
+pt = exploit vulnerabilities
+
+threat modelling
+automated scanning
+
