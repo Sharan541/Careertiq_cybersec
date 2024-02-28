@@ -1,0 +1,272 @@
+28/2/24:
+
+SIEM?
+Security events and information management
+collects logs, correlates, log analysis, present findings to end user
+
+IDS, IPS?
+works on Layer 3
+
+what is intrusion?
+what is incident?
+what is breach?
+
+intrusion = alert = there mmay be... potential
+breach = system compromized. 100% access maybe
+incident = compromizes CIA
+
+ids, ips = 
+siem = no preventive action.
+the tool itself doesnt prevent attack.
+for that we need SOAR.
+
+SOAR = security orchestration, automation and response
+
+threat intelligence 
+intelligence = acquire, apply knowledge and skills
+"make decisions"
+
+GPT?
+generative pretrained transformed
+kaggle = take datasets from it
+
+gather all the incident that happens in the world.
+all threats in one place
+=== threat intelligence == a database with collection of threats
+arranged on priority basis
+threat intelligence platform
+involves ML too
+
+automated action with SOAR.
+SIEM vs SOAR difference.
+
+allinone platform from fw to siem to soar.
+firewall = packet filtering. thats all. predefined set of rules.
+anti-virus = based on signature with its virus database.
+virus total is a good one.
+
+know the difference between these tools.
+-------------------------------------------------
+WAF=
+web application firewall
+"cloudflare"
+stops 90% of the attacks
+how to configure cloudflare ??
+
+CMS =content management system
+wordpress
+wordfence
+
+cloudflare = mask real ip-address with proxy or reverse proxy.
+proxy = in between C and S
+WAF inbetween = u ping server but you ping the middle WAF only.
+
+concentrates only on web application attacks.
+wont stop ssh
+waf wont stop hydra
+webserver attacks wont be stopped
+webapplication attacks will be stopped
+
+web application  vs  web server
+
+free ids, ips, snort
+free waf = cloudflare
+siem also free
+own SOC centre for free of cost
+
+company spends crores to make work easier.
+
+VPN =
+vpn encrypts data, creates a tunnel.
+do proxy, then vpn
+or just tor.
+
+zero trust network access  ==  zero trust policy
+authentication = always multifactor
+authorization = limited access for particular job
+
+LAN ports are blocked, monitored.
+it team needs to configure with ur mac address.
+
+workstation completly monitored. no trust.
+find mac address, give permissions.
+
+iot config with physical address.
+
+DEFENCE IN DEPTH:
+different controls, etc...
+
+Data loss prevention:
+siem, ids, ips, fw = diff role than this
+copy a sensitive data.
+insider threats
+satisfy workers = only solution for insiders
+DLP = all data monitored
+free DLP there
+monitor google drive, ports, directories, email...
+data loss = not deleting and recover but privacy and data integrity.
+
+Cisco Packet Tracer
+
+EndPoint Security:
+complete security for that particular host.
+anti-virus
+firewall
+ids, ips
+siem for a host
+even iot can be monitored with siem
+printer, tv, washing machine, fridge
+
+ids = host based, network based
+thousands of pc means no hids but nids in between
+NIDS vs HIDS usescases
+
+EDR = endpoint detection and response
+XDR = extended detection and response
+
+EDR = can't replace SIEM
+makes sure host is properly connected to network
+has the permission to connect to this network
+no intrusion or incident
+versions, firewall off?, misconfigured?
+these things...
+Uniqueness of EDR = affected by malware? it removes it from network. stops it from spreading to other hosts
+which other tools don't
+
+endpoint compliance:
+regular system updates
+patch management
+these also detected by XDR
+endpoint management
+
+remote monitoring tools
+
+downlaod an app?
+report sent to admin -> management -> allow
+
+download torrent in office laptop.
+terminate you in 20 minutes.
+ISMS policy.
+ISMS = information security management system
+join an org = sign a 15 page policy...
+read it. detailed report for you.
+violate ISMS = actions. no warnings.
+code of context = some warnings.
+
+Whitelist, Blacklist
+whitelist = allow
+whitelisted ip = trusted or known ip address
+unknown ip address, contineously flooding request = blacklist that ip-address
+that domain...
+
+whitebox testing 
+
+SDLC, different methodoligies, waterfall method...
+
+know everything before doing =  white box testing
+about software development perspective.
+Quality assurance...
+entire blue print of application to test
+
+blackbox testing = all we know is target ip or domain or range of ip
+no knowledge of internal structure.
+
+greybox = partial knowledge.
+they tell us the presence of proxy etc...
+database. little info.
+
+cloud models: SaaS, PaaS, IaaS.
+which is better for our use.
+
+deployment model:
+public, private, hybrid.
+based on infrastructure.
+
+own car = private
+hire ola = public
+
+Hackathon in SRM?
+
+give me a sepate cloud instance.
+a separate computer used only by me = private cloud.
+only I use the entire resource. entire instance.
+
+cloud = always third party.
+not data center.
+
+every instance = a virtual machine. a cloud.
+public cloud = 1 machine has 4 VM for different organizations.
+
+thirdly = not a word.
+
+one hardware or infra is one. but diff vm, diff instances in same hardware.
+if one instance is hacked. there is a possibility for others in that pc to get hacked.
+
+hybrid = some in public, some in private.
+
+got hacked meaning?
+
+private instance
+public instance
+based on infrastructure.
+
+one shared drive...
+
+which deployment model to choose: lots of questions, research, brainstromming sessions...
+which one is cost effective..
+
+one drive = 5gb free for all.
+delete in local system, gone there too.
+
+cant have google drive on local system.
+
+hybrid = ?
+
+before joining a college or company.
+first send anonymous message, chat to learn more to them. like 20 to 30 people, about internal politics etc...
+have 2 to 3 offers.
+
+ask the students who studied. real intelligence.
+dont go with the marketting.
+
+cloud platforms: aws, oracle, ibm, google, azure, gcp, render
+
+Cloud security:
+authentication and access control
+cloud authentication + IAM = identity and access management
+
+all have separate identity
+something you know, you have, you are
+
+admin = identity = roles given according to it
+normal user = roles, scopes, limited access.
+based on the identity
+
+policies
+windows policy, group policy.
+change passwords every 28 days.
+a policy.
+
+role based authentication.
+role based access control.
+
+role based = based on role
+mandatory access control = deals with sensitive. the opposite of DAC. PRINCIPLE OF LEAST PRIVILEGE.
+discrenetiary access control = u have all rights for it. sole authority to do actions.
+
+what is discretion?
+
+Defend integrity
+without internet = no access
+
+WAF implemented before the cloud.
+User -- waf/proxy -- cloud.
+
+if know our cloud = send 1000 requests
+cloud works on pay as per usage.
+someone continious request = waste of money for user.
+so need to monitor carefully.
+
+monitor with SIEM...
+
+MID COURSE ANALYSIS TEST
