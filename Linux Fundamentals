@@ -598,6 +598,14 @@ switch user, login as Ramya
 switch user, login as user
 close the vm
 
+============================================================================================
+
+-- sudo apt update
+-- sudo apt install tor -y
+-- sudo service tor start
+-- sudo service tor stop
+-- sudo service tor status
+locate vs find command
 
 
 
