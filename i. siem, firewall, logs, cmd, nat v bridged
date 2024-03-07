@@ -4,6 +4,10 @@ NAT vs Bridged adapter.
 NAT = isolated environment.
 PC safe even if VM got hacked.
 ----------------------------------------
+--- sudo service NetworkManager start
+--- sudo nmcli networking on
+----------------------------------------
+
 SIEM=
 
 Security information and event management:
