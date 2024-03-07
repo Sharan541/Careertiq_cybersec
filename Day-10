@@ -1,2 +1,0 @@
---- sudo service NetworkManager start
---- sudo nmcli networking on
