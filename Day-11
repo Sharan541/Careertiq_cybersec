@@ -1,3 +1,9 @@
+
+----------------------------------------
+NAT vs Bridged adapter.
+NAT = isolated environment.
+PC safe even if VM got hacked.
+----------------------------------------
 SIEM=
 
 Security information and event management:
