@@ -89,3 +89,15 @@ systemctl stop ssh
 systemctl == [ start stop status enable disable ]
 
 tcpdump = cli version of wireshark
+-----------------------------------------------------
+
+extras:
+for using proxy chains. from ceh chuck course:
+
+sudo apt update
+sudo apt install tor -y
+sudo service tor start
+sudo service tor stop
+sudo service tor status
+sudo nano /etc/proychains.conf
+edit it for your configuration
