@@ -139,7 +139,7 @@ install the ovpn file from tryhackme
 drag and drop into the parrot machine
 cd desktop
 find ovpn file
-- sudo ovpn 1Nila.ovpn
+- sudo openvpn 1Nila.ovpn
 
 open new terminal and ping for test connectivity.
 no.
@@ -161,6 +161,38 @@ change ip adddress in reverse shell
 - nano rev.php
 pentest monkey code copy
 
+tryhackme - access menubar - in regular 1 - 
 
+getting the reverse shell
+port number 8899
 
+ftp, target ip address
+username password that we cracked
+- ls
+shell.php index.html?
+upload this
+- get
+- put
+in ftp to send and receive files from ftp
+- put shell.php
+trigger this.
+browser -> 
+command to listener, then trigger the file.
+
+---------------------------------------------------------
+
+gain root access.
+revershell?
+upload a script.
+upload reverse shell.
+target ip address connects to our ip address.
+reverse shell should have our ip address. kali ip.
+its like a malware.
+
+u send a malware, they use it. we get access.
+
+this gaining access, revershell, listener. shit is pain.
+
+upload reverse shell, gain access.
+till that do.
 
