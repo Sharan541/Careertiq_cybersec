@@ -1,0 +1,166 @@
+web server running.
+wireshark always on behind.
+run along the splunk forwarder.
+give a wireshark log of hacked server.
+analyze the wireshark log.
+find how they hacked it.
+do the same way to hack again.
+attacker changed password.
+do the same, find password.
+retrieve the system.
+go inside, take control of the system.
+
+ftp, telnet, http = unencrypted.
+so find information here. filter the traffic
+
+based on protocol, attack time etc to reduce.
+ftp... can read data.
+"ftp" in search bar to filter.
+attaker ip address
+destination is the victim.
+OSI layer details
+FTP code 220. so req response success.
+request says user jenny
+dictionary attack
+
+/var/www/html = web server's root directory
+STOR = upload a shell.
+
+cracked ftp, logged in, uploading a reverse shell.
+chmod 777 shell.php
+quit
+how a reverse shell works?
+someone has to execute that particular file.
+we uploaded in the webserver itself.
+
+ssh doesnt open a file
+start apache server, have remote access
+
+html file created with touch
+uploaded a file inside /var/www/html = call it in url itself
+shell.php
+
+attacker quit ftp after uploaded
+attacker checked pwd at /var/www/html
+uploaded shell
+left it
+
+devs = connect to server, upload file
+
+after ftp, we have http packets.
+
+calling the shell.php
+attacker will get the reverse shell.
+he executed it.
+
+logs till now is in wireshark
+logs saved in /var/logs file from now.
+
+THM's kali >> Own in VM
+internet > extra resources.
+55 minutes free.
+
+
+from attackbox,
+ping the target device
+ftp the target device
+
+1 interview,
+gave hack the box machine.
+get root access in 30 minutes
+or else go out.
+for pentesting...
+7.5 lakhs.
+
+for SOC analyst. god knows what.
+
+use john, hashcat etc to crack password here??
+we dont have the hash file.
+we are communicating online.
+online cracking tool.
+H Y D R A
+- hydra
+so we crack password without the hash value?
+one login name -l
+multiple login names -L FILE
+exlore the options
+admin, root, guest, administrator... usernames common.
+from seclists.
+
+submit a wordlist.
+rockyou.
+
+supported services
+ldap, mysql, http, cisco, rdp, rlogin, smp, ssh!, teamspeak
+attack passwords
+
+100 people communicate in same traffic like cod.
+teamspeak creates a small server for olden days.
+good server = handle traffic.
+hack online vm, vnc to write other's exam?
+in same network? sit somewhere and write exam,
+anydisk?
+vnc = hidden from radars.
+
+Hydra. need wordlist.
+attackbox wont work for internet. works for associated target machine.
+a wordlist exists in the machine.
+/usr/local/share?
+- locate rockyou
+LOCATE COMMAND
+
+- hydra -l jenny -P /usr/../rockyou.txt 10.10.1.. ftp
+different ways or formats to use hydra
+
+tryhackme is an isolated network
+hack traffic lights
+connect to?
+mangatha la?
+traffic lights also in isolated network.
+
+me in home. cant access cit network.
+insider or proxy or vpn.
+
+process to connect to different networks.
+use vpn to?
+given in tryhackme website!
+need access to tryhackme network
+open vpn free than attackbox
+
+copy paste not working
+use python server
+
+download the vpn file from the website
+for connection to that isolated server
+
+in regular 1 (india)
+
+install the ovpn file from tryhackme
+drag and drop into the parrot machine
+cd desktop
+find ovpn file
+- sudo ovpn 1Nila.ovpn
+
+open new terminal and ping for test connectivity.
+no.
+open new terminal. ip a.
+see one more interface. tun 0.
+
+do hydra
+- hydra -l jenny -P /home/kali/Downloads/rockyou.txt 10.10.90.116 ftp -t 64
+multi threading means to do it faster.
+default, hydra uses 16 threads. 16 passwords per second.
+got password.
+
+login to ftp as we got password.
+now upload the reverse shell and get access to the system
+- locate reverse
+revshells.com
+
+change ip adddress in reverse shell
+- nano rev.php
+pentest monkey code copy
+
+
+
+
