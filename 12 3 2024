@@ -197,3 +197,178 @@ upload reverse shell, gain access.
 till that do.
 
 thm h4cker room.
+
+================================================================
+reverse shell.
+give your number
+they call you, gets hacked.
+same
+press 1, 2, 3 like that we use port numbers.
+first 1024 ports dont use
+
+task manager in linux
+- ps
+use kill command to stop
+create, kill tunnel
+
+give your ip in reverse shell.
+upload file.
+find permissions. you got rw, not x
+so use chmod
+
+upload the file
+
+upload shell
+change permission
+start listener port 
+execute
+
+get the apache page
+get the reverse shell
+
+-------------
+- curl ip /
+use internet without a browser in command prompt
+- curl http://10.12.87.143/rev.php
+easy.
+
+got reverse shell.
+check which user do we have.
+root, admin, guest
+
+hack the machine = we get basic user access.
+to install an application, need admin.
+in lunix we become root. admin in windowss.
+
+check which user are we using.
+- whoami
+/www/data ?
+why not username jenny?
+
+file executed by jenny but still... why?
+we used jenny's ftp.
+- ps
+search for apache.
+apace server is run by www/data
+
+run apache server as root = gone.
+permission management.
+new user for a website as /www/data
+give limited accesss.
+hacker should not navigate to user or root directory.
+misconfiguration. chmod. blindly follow.
+
+www/data to jenny how?
+password reuse vulnerability
+try switching to jenny with same password.
+- su - jenny
+we have reverse shell = weak shell.
+cant use su command.
+upgrade the shell?
+proper shell to execute terminal command.
+
+need better reverse shell.
+available in kali is outdated. stable shell is needed.
+find in github, revshell.com
+---------------
+
+python >>
+needed for stable reverse shell
+
+- python
+check it is there or not
+(call python, check) like ping.
+- which python
+- which python3
+
+python module - import - get a stable shell.
+same thing for windows:
+= where tool-name
+
+- python3 -c 'import pty;pty.spawn("/bin/bash/")
+c = command
+pty module
+spawns a shell
+use /bin/zsh or /bin/sh or /user/zsh
+platform name check. 
+read the command.
+is it a directory?
+
+reach the right article.
+searching for it.
+
+refer articles. but understand how it does it.
+
+
+- stty raw echo  ;  fg
+
+OSCP certification like this...
+notes or biheart
+for ceh not needed
+- stty raw -echo; fg
+
+after becoming jenny user,
+switch again as root user
+does jenny have sudo to root?
+
+
+
+check in etc groups to see it.
+or use command,
+- id
+- sudo -l """""""""""""""""
+lists all commands we can run as sudo
+looks like we can run as all r
+run file or appln as sudo
+
+without jenny's password not possible.
+she used ftp password as system password
+need to use lots of other passwords.
+
+switch user again.
+- sudo su
+- su -root
+sudo su is better
+
+reptile?
+read flag.txt
+- find / -iname flag.txt
+if error comes. already running as root. so no errors comes.
+- find / -iname flag.txt 2>/dev/null
+find
+/ = entire system = root directory in website. system dir in system.
+flush the error
+
+
+now we got the flag.
+read it.
+echo head tail more less
+---------------------------------------
+thm, free machines are plenty
+do them.
+with walkthrough too.
+
+aux
+all user execute
+- ps aux | grep openvpn   (there but still)
+- htop (there)
+like task manager
+
+oops see machine name
+in hackthe box
+
+openvpn from hackthebox website as well
+
+windows server 2019
+installation.
+active directory etc... things
+
+gobuster
+wfuzz
+for proper directory
+
+rce = remote code exe
+reverse shell
+
+---------------
+htb academy- active dir for beginners
