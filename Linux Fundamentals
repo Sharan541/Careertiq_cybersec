@@ -605,7 +605,11 @@ close the vm
 -- sudo service tor start
 -- sudo service tor stop
 -- sudo service tor status
-locate vs find command
+--------------------------------------
+
+find
+locate
+grep
 
 
 
