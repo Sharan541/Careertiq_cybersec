@@ -1,7 +1,7 @@
 ----------------------------------
 
 To attack the target machine, you must be on the same network.
-Connect to the Starting Point VPN using one of the following options.
+Connect to the Starting Point VPN.
 
 htb -> room -> ovpn file
 parrot desktop -> cmd1 -> -cd Desktop -> -sudo openvpn Saish1.ovpn
