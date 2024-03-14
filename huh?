@@ -1,0 +1,68 @@
+----------------------------------
+
+To attack the target machine, you must be on the same network.
+Connect to the Starting Point VPN using one of the following options.
+
+htb -> room -> ovpn file
+parrot desktop -> cmd1 -> -cd Desktop -> -sudo openvpn Saish1.ovpn
+
+cmd2 ->
+target ip address available in htb
+- ping ip-address
+- export ip=ip-address
+- ping $ip
+- nmap $ip -v -p1-65535 --min-rate=2000 | tee open_ports.txt
+open ports = 139, 80, 445, 22
+-----------------------------------
+
+windows -> Folder -> properties -> share -> everyone in network
+copy link, share. 
+network and sharing center -> all network -> passwd protected sharing -> turn off.
+guest access -> add user -> guest -> read permission -> share.
+
+use smb = super risky service.
+netcat listener?
+responder listener? = who visited, we get their username, password.
+if someone shares file = risky.
+smb asks to prove who you are.
+hash of windows password sent to attacker.
+
+sender has 445 open. updated os means ok, if not it is unsafe.
+smb exploit available. target machine 445 is open too.
+
+what about 139.
+makes sure smb works fine.
+supporting port for 445.
+interconnected...
+----
+connect to cit chennai -> network app in windows
+there are printer in network
+use it from here too.
+
+----------------------
+- smbclient -L//$ip/
+(smbclient tool)
+see the open directories, travel in it.
+some are password protected
+- smbclient //$ip/CIT
+- smbclient //$ip/websvr
+we see a terminal >
+its a shared drives, we look for files.
+- ls
+- get enter.txt
+- exit
+it will be there in current dir.
+- cat enter.txt
+got password hash.
+term: cooked.
+cyberchef website. windows machine la.
+vip website. ctf. tasks.
+automatic vs manual. did auto as alg unknown.
+text - base 68 - base 32 - base 64 - scam2021.
+manual = insane?
+/subrion ?
+cms - content management system
+
+do wfuzz, gobuster, dirbuster. refer to hacker's bible: hacktricks.
+main wordpress files
+
