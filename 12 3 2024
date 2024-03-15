@@ -1,1 +1,65 @@
-a
+reverse shell
+web shell
+3 types of shells?
+backdoor = powerful.
+
+random manual enumeration.
+sql backup = all passwords...
+
+backup in same machine = sucks.
+=====================================
+
+check for file: robots.txt
+robots.txt is necessary.
+STOP THE BOTS.
+a good developer.
+robots.txt in website directory.
+
+refer HACKTRICKS
+
+wordpress = content management system
+
+small, costly mistakes should be prevented in management.
+
+ENUMERATION... ENUMERATION... 8
+
+5 phases of hacking:
+1st three phases = 70% of time. good hacker.
+eep digging, digging, digging.
+
+where to upload a script.
+avatar?
+practice practice practice...
+
+simple bypass.
+
+content type restriction.
+http methods: get post put delete... 25 to 30.
+http response?
+
+upload a shell
+start the listener
+trigger the file from browser
+
+uploaded a file.
+need to find location.
+
+checking source code = download.
+
+right click, open image in new tab = directory found.
+
+got user access or www/data = do privilege escalation.
+
+search sploit tool
+search in google
+search in github
+
+CVE >>
+CWE
+CVSS score??
+skills to find vulnerability, report, fix
+
+
+
+
+
