@@ -1,5 +1,36 @@
 TCP handshake
 ICMP echo request reply
 HTTP request response
+--------------------
 
--- nc 
+netcat/ ncat/ nc
+read and write data between 2 networks.
+-- nc [<options>] <host> <port>
+-- man netcat
+
+client-server connection between 2:
+device1: -- nc -lv 1234
+l = listen, v = output.
+device2: -- nc -v 10.2.2.14 1234
+established a client server connection.
+
+ping specific port on website: -- nc -zv google.com 443
+scan ports: 
+-- nc -lkv 1234
+-- nc -zv 10.0.2.4 1234
+-- nc -zv 10.0.2.4 1230-1235  (scan with port range)
+-- nc -zv 10.0.2.4 1230-1235 2>&1 | grep 'succeeded'
+
+Transfer files:
+-- touch file.txt
+-- nc -lv 1234 < file.txt   (1)
+-- nc -zv 10.0.2.4 1234 > file.txt  (2)
+
+tar command ?
+
+web server: -- nc -lv 10.0.2.4 1234
+alternate: -- curl 10.0.2.4:1234
+
+awk ?
+--------------------
+
