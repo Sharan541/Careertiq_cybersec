@@ -1,0 +1,5 @@
+TCP handshake
+ICMP echo request reply
+HTTP request response
+
+-- nc 
