@@ -60,8 +60,25 @@ CVSS score??
 skills to find vulnerability, report, fix
 
 got webshell, need reverse shell...
+=============================================================================
 
+hub + wireshark/ tcpdump = GONE.
 
+1 way = vakie talkie
+2 way = mobile call
+half and full duplex
+
+hub = layer 1 = no intelligence. send to all. bits.
+switch = layer 2 = mac level inelligence. send to 1 host in LAN.
+router = layer 3 = ip level intelligence.
+
+l3 switch vs router.
+router uses dhcp.
+
+repeaters = layer 1 = wired networks = distance of transmission more means use to regenerate signal.
+wireless for = WAP to extend length or coverage area.
+
+===============================================================================
 
 
 
