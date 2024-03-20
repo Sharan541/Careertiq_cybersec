@@ -103,5 +103,12 @@ router configured = ping others too.
 
 2 pc = line.
 3 and more = topology. star bus mesh extendedstar
+bus efficient than mesh.
 
+interface: fa0
+
+254 usable.
+1 broadcast, 1 default gateway.
+
+router function = broadcast to unicast.
 
