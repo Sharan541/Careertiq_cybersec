@@ -88,6 +88,8 @@ NAT in Router. not in L3 switch.
 
 Modem = modulator and demodulator. digital signal - LAN. analog signal - internet.
 ISP - Modem - Router - LAN.
+
+router = connect 2 networks. cant do in l3 switch.
 ===============================================================================
 
 
