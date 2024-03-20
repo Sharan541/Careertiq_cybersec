@@ -84,6 +84,10 @@ wifi extender.
 expand range no. retransmit signal.
 network congestion.
 ip-address limitations.
+NAT in Router. not in L3 switch.
+
+Modem = modulator and demodulator. digital signal - LAN. analog signal - internet.
+ISP - Modem - Router - LAN.
 ===============================================================================
 
 
