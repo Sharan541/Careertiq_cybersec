@@ -94,5 +94,14 @@ PC-PC = cross over cable.
 PC-switch = straight through cable.
 ===============================================================================
 
+Network architecture...
+
+simulations vs emulation.
+
+be in same subnet = ping.
+router configured = ping others too.
+
+2 pc = line.
+3 and more = topology. star bus mesh extendedstar
 
 
