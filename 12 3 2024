@@ -90,6 +90,8 @@ Modem = modulator and demodulator. digital signal - LAN. analog signal - interne
 ISP - Modem - Router - LAN.
 
 router = connect 2 networks. cant do in l3 switch.
+PC-PC = cross over cable. 
+PC-switch = straight through cable.
 ===============================================================================
 
 
