@@ -619,6 +619,9 @@ close the vm
 -- sudo service tor stop
 -- sudo service tor status
 
+sudo nano /etc/proychains.conf
+edit it for your configuration
+
 ==================================
 
 find
