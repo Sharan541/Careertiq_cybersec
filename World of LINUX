@@ -221,9 +221,9 @@ access log files
 --- usermod  or  chmod
 --- gpasswd
 
-----------------------------------------------------------------------
-======================================================================
-----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
 LINUX Commands:
 
@@ -296,12 +296,12 @@ usermod change name how?
 
 groupdel feelings
 
-useradd
-usermod
-userdel
-groupadd
-groupmod
-groupdel
+-- useradd
+-- usermod
+-- userdel
+-- groupadd
+-- groupmod
+-- groupdel
 
 cat /etc/passwd  =  look at users
 cat /etc/group  =  look at groups
@@ -335,9 +335,9 @@ fg 1
 kill 1
 pkill 1 ping
 
--------------------------------------------------------------------
-===================================================================
--------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
 cd /home
 mkdir cit
@@ -432,6 +432,7 @@ cat message.txt | grep sort
 find / -name "quantum1"
 find . -type f -empty
 find . -perm /a=x
+
 chmod +x message.txt  =  change modifications
 chown shraddha message.txt  =  change ownership
 
@@ -484,9 +485,9 @@ sudo reboot
 sudo shutdown
 sudo shutdown -h now
 
-----------------------------------------------------------------------------------------
-========================================================================================
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
 Notes from CCST activity:
 
@@ -608,15 +609,20 @@ switch user, login as Ramya
 switch user, login as user
 close the vm
 
--------------------------------------------------------------
-=============================================================
--------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
 -- sudo apt update
 -- sudo apt install tor -y
 -- sudo service tor start
 -- sudo service tor stop
 -- sudo service tor status
+
+service vs systemctl
+-- sudo service network-manager restart
+-- sudo systemctl restart networking
+-- sudo systemctl restart systemd-networkd
 
 sudo nano /etc/proychains.conf
 edit it for your configuration
@@ -627,7 +633,7 @@ find
 locate
 grep
 
-==================================
+===========================================================================
 
 sudo apt update
 sudo apt-get install software-properties-common
@@ -635,7 +641,7 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt-get install python3.11
 
-=================================
+===========================================================================
 
 grep = analyse log files
 passwd = change password
@@ -649,13 +655,112 @@ at home = permission, not at root.
 --- locate command = 
 update the kali db
 
+==========================================================================
+
+FILE MANAGEMENT:
+different in Linux and Python
+
+in python, magic method = __name__
+python filename
+
+file management, permission management
+
+- rwx rwx
+- = file
+d = directory
+l = link
+confuse forensic investigators with tampering
+
+--- ls -al
+--- ls -l
+
+activity:
+--- sudo su
+--- mkdir Yamada
+--- ls
+--- ls -l
+--- cd Yamada
+--- touch Ryo.txt
+--- exit
+--- ll
+--- cd Yamada
+--- cat Ryo.ttxt
+touch "Hai bro" > Ryo.txt = permission denied
+
+user
+group
+others
+all
 
 
+touch
+echo
+nano
+mousepad
 
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
+/var/www/html = default root folder of webserver
+/etc/shadow = stores encrypted passwords
+/var/log = log files of server
+/bin/bash = scripting
 
+/var has things that are prone to CHANGE.
+/bin/bash    /bin/sh    /bin/zsh
+--- cat /etc/shells
 
+--- cat /etc/passwd | grep /bin/zsh
 
+etc shadow has encrypted user passwords
+etc passwd has userID, groupID ...
 
+to search in a folder
+--- grep -r folder
+--- sudo grep -r "19.168.145.144"
+check acces logs of the yesterday server
+concentrate on one ip address
+--- cat ssh.log
+--- grep -r parrot (or) user
 
+--- echo saish | md5sum > hfile.txt
+--- echo -n pasword12 | md5sum > hash3
+--- john hash3 -w=rockyou.txt
+--- john hash3 -w=rockyou.txt --format=RAW-MD5
+
+--- hashcat --help | grep sha256
+-- hashcat -a 0 -m 0 hash3 rockyou.txt
+
+-- hydra -l jenny -P rockyou.txt 10.10.90.116 ftp -t 64
+
+--- pdf2john test.pdf > hash7.txt
+--- hashcat test.pdf rockyou.txt
+--- hashcat-m 10700 hash7.txt rockyou.txt -O
+
+DISCOVER THE MODES IN MANUAL PAGE OF TOOL
+
+-- curl http://10.12.87.143/rev.php
+use internet without a browser.
+
+-- which tool-name
+
+see hidden files
+ls -a
+ssh-keygen
+cd .ssh
+cat id_rsa
+
+-- find / -iname flag.txt 2>/dev/null
+
+--- ps aux | grep openvpn
+--- htop
+--- ps
+--- kill pid
+
+apt vs apt-get
+systemctl vs service
+
+--- stty raw -echo. fg
+upgrade a reverse shell ?
 
