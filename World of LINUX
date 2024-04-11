@@ -615,6 +615,7 @@ close the vm
 
 -- sudo apt update
 -- sudo apt install tor -y
+
 -- sudo service tor start
 -- sudo service tor stop
 -- sudo service tor status
@@ -627,7 +628,7 @@ service vs systemctl
 sudo nano /etc/proychains.conf
 edit it for your configuration
 
-==================================
+===========================================================================
 
 find
 locate
